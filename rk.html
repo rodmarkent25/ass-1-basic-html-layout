@@ -1,1 +1,95 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 95vh;
+            background: #f1f1ec;
+            font-family: sans-serif;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #36835f;
+            padding: 2em 0 2em 0;
+        }
+
+        nav {
+            background: #36835f;
+            padding: 2em 0 2em 0;
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar-left {
+            background: #36835f;
+            padding: 3em 0 3em 0;
+            flex: 1 1 100px;
+        }
+
+        main {
+            background: #36835f;
+            padding: 3em 0 3em 0;
+            flex: 5 5 150px;
+        }
+
+        .sidebar-right {
+            background: #36835f;
+            padding: 3em 0 3em 0;
+            flex: 1 1 100px;
+        }
+
+        footer {
+            background: #36835f;
+            padding: 1em 0 1em 0;
+        }
+
+        @media all and (max-width: 550px) {
+            .main {
+                flex-direction: column;
+            }
+
+            main {
+                padding: 5em 0 5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        HEADER
+    </header>
+    <nav>
+        NAVIGATION MENU 
+    </nav>
+    <div class="main">
+        <aside class="sidebar-left">
+            SIDE CONTENT
+        </aside>
+        <main>
+            MAIN CONTENT
+        </main>
+        <aside class="sidebar-right">
+            SIDE CONTENT
+        </aside>
+    </div>
+    <footer>
+        FOOTER
+    </footer>
+</body>
+</html>
